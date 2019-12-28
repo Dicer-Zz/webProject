@@ -16,14 +16,14 @@
 <header>
 	<h1>地图查询</h1>
 	<p>支持经纬度及地点查询</p>
-	<p>可以获取经纬度</p>
+	<p>点击地图以获取经纬度</p>
 </header>
 <div class="main">
 	<div class="box">
 		<div class="queryPos">
 			<p>请输入经纬度：</p>
 			<input type="text" id="position" value="113.270635,35.189226">
-			<button class="btn" type="button" onclick="getPositionMap()">提交</button>
+			<button class="btn" type="button" onclick="getPositionMap()">确认</button>
 		</div>
 		<div class="queryCity">
 			<p>请输入城市：</p>
@@ -61,10 +61,26 @@
 		});
 	</script>
 </div>
-<footer>
-	<p>Create by <a href="https://github.com/Dicer-Zz">Dicer</a>
-		&nbsp&nbsp&nbsp&nbsp 
-		Power by 高德地图</p>
+<footer class="footer">
+	<div class="nav">
+		<ul class="info">
+			<li><a href="#" class="info">
+				ABOUT ME
+			</a></li>
+			<li><a href="#" class="info">
+				BLOG
+			</a></li>
+			<li><a href="#" class="info">
+				MIT LICENSE
+			</a></li>
+		</ul>
+	</div>
+	<div class="copyright">
+		&copy;
+		<script>
+			document.write(new Date().getFullYear())
+		</script>, Designed by Dicer. Coded by Dicer. Based on 高德地图.
+	</div>
 </footer>
 </body>
 </html>

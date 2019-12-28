@@ -73,3 +73,35 @@ input{
     border-radius: 3px;
 	padding: 5px;
 }
+
+footer {
+	margin-top: 30px;
+}
+.nav, .copyright {
+	display: inline-block;
+	text-align: center;
+}
+
+div.nav {
+	height: 21px;
+	margin-right: 100px;
+}
+div.copyright {
+	margin-left: 70px;
+}
+ul.info {
+	margin: 0 auto;
+}
+ul.info li{
+	margin-left: 10;
+	margin-right: 10;
+	list-style: none;
+	padding: 0;
+	float: left;
+	line-height: 30px;
+}
+
+a.info {
+	/*text-decoration: none;*/
+	color: #000;
+}
