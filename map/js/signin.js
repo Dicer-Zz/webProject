@@ -1,8 +1,8 @@
 function signin() {
     var user = document.getElementById("username");
     var psw = document.getElementById("psw");
-    // console.log(user.value);
-    // console.log(psw.value);
+    console.log(user.value);
+    console.log(psw.value);
     if(user.value == getCookie("username")
      && psw.value == getCookie("psw")) {
         window.location.href="./polygon/polygon_fav.html";

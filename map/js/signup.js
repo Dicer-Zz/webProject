@@ -6,12 +6,12 @@ function pswcheck() {
     // console.log(pswrpt.value)
     if(psw.value == pswrpt.value) {
         //TODO 用户信息加密后存入数据库
-        document.cookie="username=" + user.value;
-        document.cookie="psw=" + psw.value;
-        // console.log(getCookie("username"))
-        // console.log(getCookie("psw"))
+        document.cookie = "username=" + user.value;
+        document.cookie = "psw=" + psw.value;
+        console.log(getCookie("username"))
+        console.log(getCookie("psw"))
         alert("Log Up Success")
-        window.location.href="polygon_fav.html";
+        // window.location.href="polygon/polygon_fav.html";
     } else {
         alert("Twice password different!")
     }
