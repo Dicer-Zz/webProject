@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignIn</title>
+    <link rel="icon" href="./img/favicon.png">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <script type="text/javascript" src="./js/signin.js"></script>
+    <style>
+        .main {
+            text-align: center;
+        }
+        .container {
+            width: 300px;
+            height: 500px;
+            border-radius: 15px;
+            padding: 100px;
+            margin: 0 auto;
+            background-color: skyblue;
+        }
+        input {
+            width: 250px;
+            height: 30px;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            /*box-shadow: #cccccc;*/
+        }
+        p.signin {
+            font-size: 50px;
+            font-weight: bold;
+            color: #000000;
+        }
+        .btn {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <p class="signin">登录</p>
+            <div class="username">
+                <p>请输入用户名：</p>
+                <input type="text" placeholder="username" id="username">
+            </div>
+            <div class="psw">
+                <p>请输入密码：</p>
+                <input type="password" placeholder="password" id="psw">
+            </div>
+            <div class="btn">
+                <button class="btn" onclick="signin()">确认</button>
+            </div>
+            <footer><div class="footer"><p>尚未拥有帐号？点击此处<a href="signup.html">注册</a></p></div></footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -23,7 +23,10 @@
 	border-radius: 10px;
 }
 
-footer > p, a{
+a {
+	color: #000;
+}
+footer > p{
 	color: #fff;
 }
 

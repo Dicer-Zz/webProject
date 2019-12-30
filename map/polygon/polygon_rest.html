@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polygon</title>
+    <link rel="icon" href="../img/favicon.png">
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <script type="text/javascript" src="../js/polygon.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/backend.css">
+</head>
+<body>
+<div class="main">
+    <div class="side-nav">
+        <ul class="side-nav">
+            <li><div class="nav"><a href="../index.html" target="iframe_a" id="name"></a></div></li>
+            <li><div class="nav"><a href="polygon_fav.html" target="iframe_a">Your Favorite</a></div></li>
+            <li><div class="nav"><a href="polygon_home.html" target="iframe_a">Your Home</a></div></li>
+            <li><div class="nav"><a href="polygon_cpy.html" target="iframe_a">Your Company</a></div></li>
+            <li><div class="nav"><a href="polygon_rest.html" target="iframe_a">Your Restaurant</a></div></li>
+        </ul>
+        <script>
+            loadInfo();
+        </script>
+    </div>
+    <div class="position">
+        <table>
+            <tr>
+                <th>地点名称</th>
+                <th>经纬度</th>
+                <th>备注</th>
+                <th>前往</th>
+            </tr>
+            <tr>
+                <td>学子餐厅</td>
+                <td>113.269978,35.190691</td>
+                <td>学子</td>
+                <td><input value="点击前往" type="button" onclick="goTo('113.269978,35.190691')"></td>
+            </tr>
+            <tr>
+                <td>学府餐厅</td>
+                <td>113.267874,35.187598</td>
+                <td>学府</td>
+                <td><input value="点击前往" type="button" onclick="goTo('113.267874,35.187598')"></td>
+            </tr>
+            <tr>
+                <td>学士餐厅</td>
+                <td>113.269244,35.188509</td>
+                <td>学士</td>
+                <td><input value="点击前往" type="button" onclick="goTo('113.269244,35.188509')"></td>
+            </tr>
+            <tr>
+                <td>学苑餐厅</td>
+                <td>113.266284,35.188194</td>
+                <td>学苑</td>
+                <td><input value="点击前往" type="button" onclick="goTo('113.266284,35.188194')"></td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+</body>
+</html>

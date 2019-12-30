@@ -17,6 +17,8 @@
 	<h1>地图查询</h1>
 	<p>支持经纬度及地点查询</p>
 	<p>点击地图以获取经纬度</p>
+	<p><a href="signin.html" target="_blank">点此登录</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="signup.html" target="_blank">点此注册</a></p>
 </header>
 <div class="main">
 	<div class="box">
@@ -38,27 +40,8 @@
 	</div>
 	<div id="container"></div>
 	<script>
+		changePos();
 		var map = getPositionMap();
-	    AMap.plugin('AMap.ToolBar',function(){//异步加载插件
-	        var toolbar = new AMap.ToolBar();
-	        map.addControl(toolbar);
-	    });
-	    AMap.plugin(['AMap.Autocomplete','AMap.PlaceSearch'],function(){
-		    var autoOptions = {
-		        city: "", //城市，默认全国
-		        input: "tipinput"//使用联想输入的input的id（也就是上边那个唯一的id）
-		    };
-		    autocomplete= new AMap.Autocomplete(autoOptions);
-		    var placeSearch = new AMap.PlaceSearch({
-		        city:'',
-		        map:map
-		    })
-		    AMap.event.addListener(autocomplete, "select", function(e){
-		        //TODO 针对选中的poi实现自己的功能
-		        placeSearch.setCity(e.poi.adcode);
-		        placeSearch.search(e.poi.name)
-		    });
-		});
 	</script>
 </div>
 <footer class="footer">
