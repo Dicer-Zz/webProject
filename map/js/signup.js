@@ -11,7 +11,7 @@ function pswcheck() {
         console.log(getCookie("username"))
         console.log(getCookie("psw"))
         alert("Log Up Success")
-        // window.location.href="polygon/polygon_fav.html";
+        window.location.href="polygon/polygon_fav.html";
     } else {
         alert("Twice password different!")
     }
